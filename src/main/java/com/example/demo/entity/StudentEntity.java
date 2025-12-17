@@ -1,10 +1,16 @@
 package com.example.demo.entity;
 
-importjava.sql.Date;
+// import java.sql.Date;
+import jakarta.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+
 @Entity
 public class StudentEntity{
-   private String name;
-   private Integer id;  
+    @Id
+    @GeneratedValue(strategy=Generation)
+   private Integer id;
+   private String name;  
    private String email;
    private String password;
    private Date created;
@@ -56,6 +62,5 @@ public StudentEntity(Integer id,String name,String email,String Password){
 }
 //Default Constructor
 public StudentEntity(){
-
 }
 }
