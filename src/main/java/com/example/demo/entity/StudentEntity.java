@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-import
+importjava.sql.Date;
 @Entity
 public class StudentEntity{
    private String name;
@@ -8,4 +8,5 @@ public class StudentEntity{
    private String email;
    private String password;
    private Date createAt;
+   public
 }
