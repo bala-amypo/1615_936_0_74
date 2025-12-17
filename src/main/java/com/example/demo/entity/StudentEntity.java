@@ -15,7 +15,7 @@ public class StudentEntity{
    private String password;
    private Date created;
   //ID
-   public String getId(){
+   public Integer getId(){
     return id;
    }
    public void setId(Integer id){
