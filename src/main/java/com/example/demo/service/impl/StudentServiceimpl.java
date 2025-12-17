@@ -10,7 +10,10 @@ public class StudentServiceimpl implements StudentService{
     @Autowired StudentRepository student;
     //save()
     //findAll()
-    //findById();
-    //Ex
-     public StudentEntity postData(StudentEntity stu);
+    //findById()
+    //existById()
+    //deleteById()
+     public StudentEntity postData(StudentEntity stu){
+        return student.save(stu);
+     }
 }
