@@ -8,7 +8,7 @@ import com.example.demo.service.TimeStampService;
 
 @Service
 public class TimeStampServiceimpl implements TimeStampService{
-    @Autowired TimeStamptRepository student;
+    @Autowired TimeStampRepository student;
     @Override
      public TimeStampEntity postData(TimeStampEntity stu){
         return student.save(stu);

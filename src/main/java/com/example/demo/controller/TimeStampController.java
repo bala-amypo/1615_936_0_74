@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.TimeStampService;
-import com.example.demo.entity.TImeStampEntity;
+import com.example.demo.entity.TimeStampEntity;
 
 @RestController
 public class TimeStampController{
-     @Autowired StudentService ser; 
+     @Autowired TimeSService ser; 
    @PostMapping("/post")
-   public StudentEntity sendData(@RequestBody StudentEntity stu){
+   public TimeStampEntity sendData(@RequestBody TimeStampEntity stu){
      return ser.postData(stu);
    }
 }
