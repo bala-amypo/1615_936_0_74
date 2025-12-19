@@ -3,6 +3,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
 import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 
 @Entity
 @Data
@@ -25,4 +26,7 @@ public class TimeStampEntity{
         this.createAt=now;
         this.updateAt=now;
      }
+     @PreUpdate
+     public void Onupdate(){
+        Local
 }
