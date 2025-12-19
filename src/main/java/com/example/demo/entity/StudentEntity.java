@@ -5,7 +5,15 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lo
 @Entity
+@Data
+@Getter
+@Setter
+@AllArgumentConstructor
+@NoArgumentConstructor
+
+
 public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -15,3 +23,4 @@ public class StudentEntity{
    private String password;
    private Date created;
   
+  }
