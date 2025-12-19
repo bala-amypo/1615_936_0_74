@@ -15,7 +15,7 @@ public class ValidationServiceImpl implements ValidationService{
                return dent.save(stu);
           }
           @Override
-          public ValidationEntity findData(Long id){
+          public ValidationEntity getStudentById(Long id){
                return dent.findById(id).orElse(other:null);
           }
 }
