@@ -18,7 +18,7 @@ import lombok.Data;
 @NoArgsConstructor
 
 
-public class StudentEntity{
+public class StudentDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
   

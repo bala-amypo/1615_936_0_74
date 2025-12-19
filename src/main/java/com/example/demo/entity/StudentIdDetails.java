@@ -5,7 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.OneToOne;
-import jakarta.persistence.JoinC;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -27,5 +27,6 @@ public class StudentIdDetails{
    private String idcardnumber;
    private String student_id;
   @OneToOne
-  private StudentIdDetails
+  @JoinColumn(name="student_id");
+  private StudentIdDetails student;
   }
