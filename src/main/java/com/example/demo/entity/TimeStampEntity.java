@@ -2,7 +2,7 @@ package com.example.demo.entity;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
-
+import jakarta.persistence.PrePersist
 
 @Entity
 @Data
@@ -19,4 +19,8 @@ public class TimeStampEntity{
      private String email;
      private LocalDateTime createAt;
      private LocalDateTime updateAt;
+     @PrePersist
+     public void Oncreate(){
+        LocalDateTime now
+     }
 }
