@@ -7,16 +7,12 @@ import com.example.demo.repository.StudentRepository;
 import com.example.demo.service.StudentService;
 
 @Service
-public class StudentServiceimpl implements StudentService{
-    @Autowired StudentRepository student;
-    //save()
-    //findAll()
-    //findById()
-    //existsById()
-    //deleteById()
+public class StudentServiceimpl implements StudentDetailsService{
+    @Autowired StudentDetailsRepository student;
+    
     
     @Override
-     public StudentEntity postData(StudentEntity stu){
+     public StudentDetailsEntity postData(StudentDetailsEntity stu){
         return student.save(stu);
      }
 }
