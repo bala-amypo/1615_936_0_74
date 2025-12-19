@@ -10,7 +10,7 @@ import com.example.demo.service.TimeStampService;
 public class TimeStampServiceimpl implements TimeStampService{
     @Autowired TimeStamptRepository student;
     @Override
-     public TimeStampEntity postData(StudentEntity stu){
+     public TimeStampEntity postData(TimeStampEntity stu){
         return student.save(stu);
      }
 }
