@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.StudentEntity;
+import com.example.demo.entity.StudentDetails;
 public interface StudentDetailsService{
-       StudentEntity postData(StudentEntity stu);
+       StudentDetails postData(StudentDetails stu);
 
 }
